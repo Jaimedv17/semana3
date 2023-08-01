@@ -12,9 +12,10 @@
         multi-city tickets Find and book one-way, round-trip, or 
         multi-city.</p>
     <form>
+        <br>
         <div>
             <label for="emailPerson">Your Name</label><br>
-            <input type="email">
+            <input id="emailPerson" type="email">
         </div>
         <br>
 
@@ -22,12 +23,44 @@
             <label for="passwordPerson">Your Email</label><br>
             <input type="password">
         </div>
-        <br>
         <div>
             <label for="comentario">Comentario</label><br>
             <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" 
         name="comentario">esto es una valor por defecto</textarea>
         </div>
+        <hr>
+        
+        <br><br>
+        <form >
+        <div>
+            <label for="passwordPerson">Color</label>
+            <input type="color" autofocus>
+        </div>
+        <div>
+            <label for="passwordPerson">Rango</label>
+            <input type="range" >
+        </div>
+        <div>
+            <label for="passwordPerson">Datos</label>
+            <input type="date" >
+        </div>
+        <div>
+            <label for="passwordPerson">Nombre</label>
+            <input type="name" min="2" max="5" >
+        </div>
+        <div>
+            <label for="passwordPerson">Contraseña</label>
+            <input type="password"  required>
+        </div>
+        <div>
+        
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" >
+            <input type="submit">
+        </div>    
+        </form>
+
+        
 
     </form>
 </body>
