@@ -6,47 +6,29 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
     <h1>Send us a Message</h1>
     <p>You can use Google 
         Flights to: Find and book one-way, round-trip, or 
         multi-city tickets Find and book one-way, round-trip, or 
         multi-city.</p>
-    <form>
-        <br>
+    </header>
+    <form action="ejercicio1.html">
         <div>
-            <label for="emailPerson">Your Name</label><br>
-            <input id="emailPerson" type="email">
-        </div>
-        <br>
-
-        <div>
-            <label for="passwordPerson">Your Email</label><br>
-            <input type="password">
+            <label for="personColor">Ingrese Color</label>
+            <input type="color" id="personColor">
         </div>
         <div>
-            <label for="comentario">Comentario</label><br>
-            <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" 
-        name="comentario">esto es una valor por defecto</textarea>
-        </div>
-        <hr>
-    </form>    
-        <br><br>
-    <form >
-        <div>
-            <label for="color">Color</label>
-            <input type="color" >
+            <label for="personRange">Ingrese Rango</label>
+            <input type="range" id="personRange">
         </div>
         <div>
-            <label for="range">Rango</label>
-            <input type="range" >
-        </div>
-        <div>
-            <label for="date">Datos</label>
-            <input type="date" >
+            <label for="personDate">Datos</label>
+            <input type="date" id="personDate" >
         </div>
         <div>
             <label for="name">Nombre</label>
-            <input id="name" type="text" >
+            <input id="name" type="text" minlength="5" maxlength="10" autocomplete="off">
         </div>
         <div>
             <label for="LastName">Nombre</label>
@@ -83,22 +65,20 @@
         </div>
         <div>
             <label for="emailPerson">email</label>
-            <input type="email">
+            <input type="email" id="emailPerson" >
         </div>   
         <div>
-            <label for="numberPerson">Ingrese telefono</label>
-            <input type="number">
+            <label for="personNumber">Ingrese telefono</label>
+            <input type="number" id="personNumber" min="10" max="50" required>
         </div>
         <div>
-            <input type="submit" value="Enviar formulario">
-            
+            <input  type="submit" value="Enviar Formulario" >          
+        </div>
+        <div>
+            <button type="submit">Enviar Formularios</button>
         </div>
 
         
-    </form>
-
-        
-
     </form>
 </body>
 </html>
